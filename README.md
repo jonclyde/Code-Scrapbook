@@ -1,7 +1,7 @@
 # Code-Scrapbook
 
 ASP.Net
-Books Strap documentation - https://getbootstrap.com/
+Bootstrap documentation - https://getbootstrap.com/
 
 JavaScript
 DataTables - https://datatables.net/
