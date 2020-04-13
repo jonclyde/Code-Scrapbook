@@ -1,7 +1,9 @@
 # Code-Scrapbook
 
-ASP.Net
+Frontend
 Bootstrap documentation - https://getbootstrap.com/
+AdminLTE - https://adminlte.io/
+JQuery Datepicker - https://jqueryui.com/datepicker/
 
 JavaScript
 DataTables - https://datatables.net/
