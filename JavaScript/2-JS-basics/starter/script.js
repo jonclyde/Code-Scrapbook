@@ -164,3 +164,113 @@ switch (true){
         var value = 'boy';
         break;
 }
+
+//truthy and falsy values and equality operators
+
+var height;
+
+if(height)
+{
+    console.log('variable is defined');
+}
+else
+{
+    console.log('variable has not been defined')
+}
+
+//function
+function calculateAge(birthYear){
+    return 2018 - birthYear;
+}
+
+var ageJohn = calculateAge(1990);
+
+//functions statements and expressions
+var whatDoYouDo = function(job, firstName){
+    switch(job){
+        case 'teacher':
+            return firstName + 'teaches kids how to code';
+        case 'driver':
+            return firstName + 'drives a cab in lisbon';
+        case 'designer':
+            return firstname + 'designs beautiful websites';
+        default:
+            return firstName + 'does something else';
+    }
+}
+
+console.log(whatDoYouDo('teacher', 'John'));
+
+//Arrays
+var names = ['john','melinda','Jane']
+var years = new Array(1990, 1996,1948);
+
+console.log(names[0]);
+
+//Mutate array data
+names[1] = 'Ben';
+
+names[5] = 'Mary';
+
+console.log(names);
+
+var john =  [1,2,3];
+
+//adds to front of array
+john.unshift(0);
+//adds to end of array
+john.push(4);
+//deletes last one
+john.pop();
+
+//search array for a value
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is not a designer' : 'John is a designer';
+
+console.log(isDesigner);
+
+//Objects and properties
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+var jane = new Object();
+jane.firstName = 'Jane';
+
+
+//Objects and methods
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function(birthYear){
+        this.age = 2018 - this.birthYear;
+    }
+};
+
+john.calcAge();
+
+
+//Loops and iteration
+for (var i = 0; i < 10; i++)
+{
+    console.log(i);
+}
+
